@@ -97,8 +97,6 @@ export const ArtistSearch = () => {
         setSelectedArtist(artistId);
         setSelectedArtistName(artistName);
         setSearchResults(data.items);
-        console.log(selectedArtistName);
-        console.log(searchResults);
 
         window.location = `/${artistId}`;
       } else {
