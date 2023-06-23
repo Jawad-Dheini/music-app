@@ -27,9 +27,3 @@ function App() {
 }
 
 export default App;
-
-// Be prepared to answer questions clearly.
-// Your app should not abuse api
-// Update the type-ahead and debounce
-// Use the React UI Library
-// Change my thinking process to Mobile-First

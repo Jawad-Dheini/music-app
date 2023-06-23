@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Album } from "./Album";
 
 export const ArtistSearch = () => {
   const [searchQuery, setSearchQuery] = useState(
