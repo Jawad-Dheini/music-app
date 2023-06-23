@@ -1,0 +1,219 @@
+.App {
+  text-align: center;
+}
+
+#artist-profile {
+  display: inline-block;
+  height: 355px;
+  width: 250px;
+  margin-bottom: 100px;
+  border: 1px solid black;
+  position: relative;
+}
+
+#album-info {
+  display: inline-block;
+  height: 375px;
+  width: 250px;
+  margin-bottom: 100px;
+  border: 1px solid black;
+  position: relative;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+#artist-img {
+  width: 250px;
+  height: 230px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#artist-profile p,
+#album-info p {
+  text-align: left;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#artist-name {
+  font-size: 18px;
+  margin: 0 0 0 12px;
+  overflow: auto;
+  position: static;
+}
+
+#followers {
+  opacity: 0.6;
+  margin: 2px 0 0 10px;
+  font-size: 14px;
+}
+
+#preview {
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+#preview-div {
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+}
+
+#search-box {
+  height: 40px;
+  width: 100%;
+  max-width: 380px;
+  padding: 0 10px;
+  font-size: 20px;
+  background: url(../public/search-icon.png) no-repeat calc(100% - 15px) center;
+  background-size: 30px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+#search-box::placeholder {
+  text-align: center;
+}
+
+#login-btn {
+  height: 7%;
+  width: 28%;
+  min-height: 52px;
+  min-width: 240px;
+  padding: 0 10px;
+  font-size: 18px;
+  background: url(../public/spotify-logo.png) no-repeat 98% center;
+  background-size: 45px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#title-in,
+#subtitle-in {
+  text-align: left;
+  margin-left: 62px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.9;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+#title-in {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+#subtitle-in {
+  font-size: 16px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  #artist-profile,
+  #album-info {
+    width: 33%;
+  }
+}
+
+/* Styles for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  #artist-profile,
+  #album-info {
+    width: 45%;
+  }
+
+  #artist-img {
+    width: 100%;
+  }
+
+  #artist-name {
+    font-size: 16px;
+    margin: 5px 0;
+    position: static;
+  }
+
+  #followers,
+  #preview {
+    font-size: 12px;
+  }
+
+  #preview-div {
+    height: 20px;
+  }
+
+  #search-box {
+    width: 90%;
+    max-width: none;
+    margin: 0;
+  }
+}
+
+/* Styles for screens with a maximum width of 480px */
+@media screen and (max-width: 480px) {
+  #artist-profile,
+  #album-info {
+    margin-bottom: 40px;
+    width: 160px;
+    height: 240px;
+  }
+
+  #album-info {
+    height: 270px;
+  }
+
+  #artist-img {
+    width: 160px;
+    height: 145px;
+  }
+
+  #container {
+    padding: 30px 0;
+  }
+
+  #artist-name {
+    font-size: 14px;
+  }
+
+  #followers,
+  #popularity,
+  #preview {
+    font-size: 10px;
+    margin: 10px;
+  }
+
+  #search-box {
+    font-size: 16px;
+  }
+
+  #login-btn {
+    height: 40px;
+    font-size: 14px;
+    background-size: 35px;
+  }
+
+  #title-in,
+  #subtitle-in {
+    margin: 30px 0 0 15px;
+  }
+}
