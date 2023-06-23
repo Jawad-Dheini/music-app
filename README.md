@@ -13,6 +13,7 @@ It displays the artists on Spotify and their albums, and extra info related to t
 - Extract the zip file
 - Open the Project in your favourite editor
 - Fire the terminal and run cd music-app-main (or whatever you named your folder)
+- Run npm install
 - Run npm start
 - The App will run in your Browser
 - Sign in with your Spotify Account

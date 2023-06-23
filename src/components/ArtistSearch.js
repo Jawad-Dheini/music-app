@@ -112,8 +112,8 @@ export const ArtistSearch = () => {
   return (
     <div>
       {selectedArtist ? (
-        // Render albums for the selected artist
-        <p>Loading</p>
+        // Render albums for the selected artist (taken care of in handleArtistClick)
+        <p>Loading...</p>
       ) : (
         // Render artist search results
         <div>
