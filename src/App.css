@@ -132,7 +132,11 @@
 @media screen and (min-width: 768px) and (max-width: 850px) {
   #artist-profile,
   #album-info {
-    width: 33%;
+    width: 30%;
+  }
+
+  #artist-img {
+    width: 100%;
   }
 }
 
@@ -174,17 +178,17 @@
   #artist-profile,
   #album-info {
     margin-bottom: 40px;
-    width: 160px;
-    height: 240px;
+    width: 300px;
+    height: 460px;
   }
 
   #album-info {
-    height: 270px;
+    height: 400px;
   }
 
   #artist-img {
-    width: 160px;
-    height: 145px;
+    width: 300px;
+    height: 270px;
   }
 
   #container {
@@ -192,13 +196,13 @@
   }
 
   #artist-name {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   #followers,
   #popularity,
   #preview {
-    font-size: 10px;
+    font-size: 14px;
     margin: 10px;
   }
 
