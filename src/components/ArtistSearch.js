@@ -20,7 +20,7 @@ export const ArtistSearch = () => {
       } else if (!searchQuery) {
         setSearchResults([]);
       }
-    }, 100);
+    }, 250);
 
     return () => {
       clearTimeout(timer);
@@ -39,7 +39,6 @@ export const ArtistSearch = () => {
 
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);
-    searchArtists();
   };
 
   const handleKeyPress = (event) => {
