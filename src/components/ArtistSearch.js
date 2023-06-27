@@ -11,23 +11,22 @@ export const ArtistSearch = () => {
   const [selectedArtistName, setSelectedArtistName] = useState(
     localStorage.getItem("name") || null
   );
-  const [artistClicked, setArtistClicked] = useState(false);
 
   // Debouncing in the useEffect
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (searchQuery && !artistClicked) {
+      if (searchQuery) {
         searchArtists();
-      } else if (!searchQuery && !artistClicked) {
+      } else if (!searchQuery) {
         setSearchResults([]);
       }
-    }, 200);
+    }, 100);
 
     return () => {
       clearTimeout(timer);
     };
     // eslint-disable-next-line
-  }, [searchQuery, artistClicked]);
+  }, [searchQuery]);
 
   useEffect(() => {
     if (selectedArtistName && searchResults.length > 0) {
@@ -77,7 +76,6 @@ export const ArtistSearch = () => {
   };
 
   const handleArtistClick = async (artistId, artistName) => {
-    setArtistClicked(true);
     const url = window.location.href;
     const params = new URLSearchParams(url.split("#")[1]);
     const accessToken = params.get("access_token");
